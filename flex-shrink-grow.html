@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxes</title>
+    <style>
+        .flex-container{
+            display: flex;
+     
+        }
+        .child-1{
+            background-color: rebeccapurple;
+            height:64px;
+            width:64px;
+        }
+        .child-2{
+            background-color: blanchedalmond;
+            height: 64px;
+            width: 64px;
+          /*  flex-shrink: 5; *//*to shrinking faster 5-times make all chld to 256px*/
+          flex-grow: 1;/* to show demo first change size of all child to   to 64px; taking extra spece*/
+        }
+        .child-3{
+            background-color: chartreuse;
+            height: 64px;
+            width: 64px;
+        }
+        .child-4{
+            background-color: cadetblue;
+            height:64px;
+            width:64px;
+        }
+        .child-5{
+            background-color: salmon;
+            height:64px;
+            width:64px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">5</div>
+        
+    </div>
+    
+</body>
+</html>
